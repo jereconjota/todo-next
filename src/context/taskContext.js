@@ -1,6 +1,6 @@
 import { createContext, useContext, useState } from "react";
 import { v4 as uuid } from "uuid";
-const TaskContext = createContext();
+export const TaskContext = createContext();
 
 export const useTasks = () => useContext(TaskContext);
 
