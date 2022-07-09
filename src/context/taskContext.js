@@ -2,8 +2,6 @@ import { createContext, useContext, useState } from "react";
 import { v4 as uuid } from "uuid";
 export const TaskContext = createContext();
 
-export const useTasks = () => useContext(TaskContext);
-
 export const TaskProvider = ({ children }) => {
 
     const [tasks, setTasks] = useState([{ id: 1, title: 'Hacer la compra', description: 'esto es lo que tenes q comprar' }]);
@@ -25,3 +23,5 @@ export const TaskProvider = ({ children }) => {
         </TaskContext.Provider> 
     );
 }
+
+export const useTasks = () => useContext(TaskContext);
