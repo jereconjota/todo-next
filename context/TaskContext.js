@@ -5,7 +5,7 @@ const TaskContext = createContext();
 
 export const TaskProvider = ({ children }) => {
 
-    const [tasks, setTasks] = useState([{ id: 1, title: 'Hacer la compra', description: 'esto es lo que tenes q comprar' }]);
+    const [tasks, setTasks] = useState([]);
     const hola = 'hello';
 
     const createTask = (title, description) => {
